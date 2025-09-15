@@ -1,0 +1,9 @@
+<h1>Service Usage</h1>
+
+<p>Reservation: <%= @service_usage.reservation_id %></p>
+<p>Service: <%= @service_usage.service_id %></p>
+<p>Quantity: <%= @service_usage.quantity %></p>
+<p>Used at: <%= @service_usage.used_at %></p>
+<p>Note: <%= @service_usage.note %></p>
+
+<%= link_to "Back to Service Usages", service_usages_path %>

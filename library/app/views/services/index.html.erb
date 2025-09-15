@@ -1,0 +1,15 @@
+<h1>Services</h1>
+
+<ul>
+  <% @services.each do |service| %>
+    <li>
+      <%= link_to "#{service.name}", service_path(service) %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "Rooms", rooms_path %>
+<%= link_to "Guests", guests_path %>
+<%= link_to "Reservations", reservations_path %>
+<%= link_to "Service Usages", service_usages_path %>
+<%= link_to "Invoices", invoices_path %>

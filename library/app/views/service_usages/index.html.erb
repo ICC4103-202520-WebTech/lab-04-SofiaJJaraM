@@ -1,0 +1,15 @@
+<h1>Service Usages</h1>
+
+<ul>
+  <% @service_usages.each do |usage| %>
+    <li>
+      <%= link_to "Reservation #{usage.reservation_id} - Service #{usage.service_id}", service_usage_path(usage) %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "Rooms", rooms_path %>
+<%= link_to "Guests", guests_path %>
+<%= link_to "Reservations", reservations_path %>
+<%= link_to "Services", services_path %>
+<%= link_to "Invoices", invoices_path %>

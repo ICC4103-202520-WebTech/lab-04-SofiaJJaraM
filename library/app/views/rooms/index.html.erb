@@ -1,0 +1,15 @@
+<h1>Rooms</h1>
+
+<ul>
+  <% @rooms.each do |room| %>
+    <li>
+      <%= link_to "Room #{room.number}", room_path(room) %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "Guests", guests_path %>
+<%= link_to "Reservations", reservations_path %>
+<%= link_to "Services", services_path %>
+<%= link_to "Service Usages", service_usages_path %>
+<%= link_to "Invoices", invoices_path %>

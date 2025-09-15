@@ -1,0 +1,15 @@
+<h1>Guests</h1>
+
+<ul>
+  <% @guests.each do |guest| %>
+    <li>
+      <%= link_to "#{guest.first_name} #{guest.last_name}", guest_path(guest) %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "Rooms", rooms_path %>
+<%= link_to "Reservations", reservations_path %>
+<%= link_to "Services", services_path %>
+<%= link_to "Service Usages", service_usages_path %>
+<%= link_to "Invoices", invoices_path %>
